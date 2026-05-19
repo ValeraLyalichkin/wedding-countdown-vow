@@ -1,0 +1,124 @@
+@import "tailwindcss" source(none);
+@source "../src";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-cream: var(--cream);
+  --color-ink: var(--ink);
+  --color-blush: var(--blush);
+  --color-wine: var(--wine);
+  --color-forest: var(--forest);
+  --color-dust: var(--dust);
+
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-serif: "Playfair Display", "Times New Roman", Georgia, serif;
+  --font-num: "Baskervville", "Baskerville", "Times New Roman", Georgia, serif;
+  --font-script: "Great Vibes", cursive;
+  --font-sans: "Montserrat", "Inter", system-ui, sans-serif;
+
+  --animate-fade-up: fade-up 0.8s ease-out both;
+  --animate-fade-in: fade-in 1s ease-out both;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes fade-in { from { opacity: 0;} to { opacity: 1;} }
+  @keyframes float {
+    0%,100% { transform: translateY(0);}
+    50% { transform: translateY(-12px);}
+  }
+  @keyframes heart-rise {
+    0% { transform: translate(0,0) scale(0.4) rotate(var(--r,0deg)); opacity: 0;}
+    20% { opacity: 1; }
+    100% { transform: translate(var(--tx,0), var(--ty,-120vh)) scale(var(--s,1)) rotate(var(--r,0deg)); opacity: 0;}
+  }
+}
+
+:root {
+  --radius: 0.75rem;
+
+  /* Palette: Navy / Pale Pink / Azalea / Sky Blue / Beige */
+  --cream: oklch(0.962 0.006 70);        /* #F5EFEB beige */
+  --ink: oklch(0.32 0.05 255);           /* deep navy text */
+  --blush: oklch(0.85 0.06 5);           /* #F7C9D4 azalea */
+  --wine: oklch(0.36 0.05 255);          /* #2F4156 navy as accent */
+  --forest: oklch(0.36 0.05 255);        /* navy bg */
+  --dust: oklch(0.83 0.035 245);         /* #C8D9E6 sky blue */
+
+  --background: var(--cream);
+  --foreground: var(--ink);
+  --card: oklch(0.98 0.008 80);
+  --card-foreground: var(--ink);
+  --popover: oklch(0.98 0.008 80);
+  --popover-foreground: var(--ink);
+  --primary: var(--wine);
+  --primary-foreground: oklch(0.98 0.01 80);
+  --secondary: var(--dust);
+  --secondary-foreground: oklch(0.98 0.01 80);
+  --muted: oklch(0.92 0.012 80);
+  --muted-foreground: oklch(0.45 0.02 255);
+  --accent: var(--wine);
+  --accent-foreground: oklch(0.98 0.01 80);
+  --destructive: oklch(0.55 0.20 25);
+  --destructive-foreground: oklch(0.98 0.01 80);
+  --border: oklch(0.85 0.02 80);
+  --input: oklch(0.88 0.02 80);
+  --ring: var(--wine);
+}
+
+@layer base {
+  * { border-color: var(--color-border); }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "ss01";
+  }
+  h1, h2, h3 { font-family: var(--font-display); font-weight: 500; letter-spacing: -0.01em; }
+}
+
+.font-script { font-family: var(--font-script); }
+.font-display { font-family: var(--font-display); }
+.font-serif { font-family: var(--font-serif); }
+.font-num { font-family: var(--font-num); font-feature-settings: "lnum"; }
+
+.reveal { opacity: 0; transform: translateY(28px); transition: opacity 0.9s ease, transform 0.9s ease; }
+.reveal.in { opacity: 1; transform: translateY(0); }
+
+.heart-particle {
+  position: fixed;
+  bottom: -40px;
+  font-size: 24px;
+  pointer-events: none;
+  animation: heart-rise linear forwards;
+  z-index: 9999;
+  color: var(--wine);
+}
