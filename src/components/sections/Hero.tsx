@@ -2,14 +2,15 @@ import { SketchCorners } from "../SketchCorners";
 import ornament from "@/assets/ornament.png";
 
 export function Hero() {
-  const maskStyle = {
+  const maskBase = {
     WebkitMaskImage: `url(${ornament})`,
     maskImage: `url(${ornament})`,
     WebkitMaskRepeat: "no-repeat",
     maskRepeat: "no-repeat",
-    WebkitMaskSize: "100% 100%",
-    maskSize: "100% 100%",
+    WebkitMaskSize: "100% 200%",
+    maskSize: "100% 200%",
     backgroundColor: "var(--wine)",
+    aspectRatio: "600 / 150",
   } as React.CSSProperties;
 
   return (
