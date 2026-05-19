@@ -29,10 +29,10 @@ export function Hero() {
           aria-hidden="true"
           className="w-full max-w-sm"
           style={{
-            ...maskStyle,
+            ...maskBase,
             WebkitMaskPosition: "top",
             maskPosition: "top",
-            aspectRatio: "600 / 300",
+            
             marginBottom: "-2.5rem",
           }}
         />
@@ -52,10 +52,10 @@ export function Hero() {
           aria-hidden="true"
           className="w-full max-w-sm"
           style={{
-            ...maskStyle,
+            ...maskBase,
             WebkitMaskPosition: "bottom",
             maskPosition: "bottom",
-            aspectRatio: "600 / 300",
+            
             marginTop: "-2.5rem",
           }}
         />
