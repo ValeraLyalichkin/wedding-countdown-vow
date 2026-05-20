@@ -38,12 +38,7 @@ export function Hero() {
           Валерий
         </h1>
 
-        <img
-          src={divider}
-          alt=""
-          aria-hidden="true"
-          className="w-64 sm:w-80 h-auto mt-6 mb-20 sm:mb-24 select-none"
-        />
+        <Divider className="w-80 sm:w-96 h-auto mt-6 mb-20 sm:mb-24" />
 
         <div className="flex items-center gap-3">
           <span className="h-px w-10 sm:w-14 bg-ink/70" />
