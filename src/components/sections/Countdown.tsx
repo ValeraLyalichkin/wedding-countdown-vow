@@ -1,9 +1,7 @@
 import { useEffect, useState } from "react";
 import { Reveal } from "../Reveal";
 import { SketchCorners } from "../SketchCorners";
-
 const TARGET = new Date("2026-08-15T15:00:00+03:00").getTime();
-
 function diff() {
   const ms = Math.max(0, TARGET - Date.now());
   const days = Math.floor(ms / 86400000);
@@ -12,7 +10,6 @@ function diff() {
   const seconds = Math.floor((ms % 60000) / 1000);
   return { days, hours, minutes, seconds };
 }
-
 export function Countdown() {
   const [t, setT] = useState(diff());
   useEffect(() => {
@@ -29,7 +26,7 @@ export function Countdown() {
     <section className="relative overflow-hidden bg-cream py-20 px-4">
       <SketchCorners opacity={0.75} />
       <Reveal className="relative z-10 max-w-3xl mx-auto text-center">
-        <p className="font-script text-5xl md:text-6xl text-wine">До встречи через...</p>
+        <p className="font-display font-light text-5xl md:text-6xl text-wine">До встречи через...</p>
         <div className="mt-10 grid grid-cols-4 gap-3 md:gap-6">
           {items.map(([label, val]) => (
             <div key={label} className="bg-forest text-cream rounded-2xl p-4 md:p-6 shadow-lg">
@@ -42,7 +39,7 @@ export function Countdown() {
             </div>
           ))}
         </div>
-        <p className="mt-12 font-script text-3xl md:text-4xl text-wine">
+        <p className="mt-12 font-display font-light text-3xl md:text-4xl text-wine">
           С любовью, Валера и Наташа
         </p>
       </Reveal>
