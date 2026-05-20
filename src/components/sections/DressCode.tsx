@@ -6,7 +6,6 @@ const colors = [
   { hex: "#a5c1d6", name: "Mist" },
   { hex: "#d6baa5", name: "Champagne" },
   { hex: "#93795a", name: "Bronze" },
-  { hex: "#56442f", name: "Coffee" },
 ];
 
 export function DressCode() {
