@@ -40,11 +40,7 @@ export function Hero() {
 
         <Divider className="w-80 sm:w-96 h-auto mt-6 mb-20 sm:mb-24" />
 
-        <div className="flex items-center gap-3">
-          <span className="h-px w-10 sm:w-14 bg-ink/70" />
-          <p className="font-num text-2xl md:text-3xl tracking-[0.2em]">15.08.26</p>
-          <span className="h-px w-10 sm:w-14 bg-ink/70" />
-        </div>
+        <p className="font-num text-2xl md:text-3xl tracking-[0.2em]">15.08.26</p>
         <p className="mt-4 text-3xl" aria-hidden="true">♥</p>
       </div>
     </section>
