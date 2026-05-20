@@ -15,7 +15,6 @@ function Divider({ className = "" }: { className?: string }) {
     </svg>
   );
 }
-
 export function Hero() {
   return (
     <section className="relative overflow-hidden min-h-screen bg-cream flex flex-col items-center justify-center px-6 py-12 sm:py-20 text-ink">
@@ -25,21 +24,17 @@ export function Hero() {
           <br />
           на свадьбу
         </p>
-
         <Divider className="w-80 sm:w-96 h-auto mt-20 sm:mt-24 mb-6" />
-
-        <h1 className="font-script text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
+        <h1 className="font-display font-light text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
           Наталья
         </h1>
-        <p className="font-script text-5xl sm:text-6xl md:text-7xl leading-[1.1] my-1">
+        <p className="font-display font-light text-5xl sm:text-6xl md:text-7xl leading-[1.1] my-1">
           и
         </p>
-        <h1 className="font-script text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
+        <h1 className="font-display font-light text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
           Валерий
         </h1>
-
         <Divider className="w-80 sm:w-96 h-auto mt-6 mb-20 sm:mb-24" />
-
         <p className="font-num text-2xl md:text-3xl tracking-[0.2em]">15.08.26</p>
         <p className="mt-4 text-3xl" aria-hidden="true">♥</p>
       </div>
