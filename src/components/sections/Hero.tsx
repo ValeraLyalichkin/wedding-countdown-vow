@@ -26,12 +26,7 @@ export function Hero() {
           на свадьбу
         </p>
 
-        <img
-          src={divider}
-          alt=""
-          aria-hidden="true"
-          className="w-64 sm:w-80 h-auto mt-20 sm:mt-24 mb-6 select-none"
-        />
+        <Divider className="w-80 sm:w-96 h-auto mt-20 sm:mt-24 mb-6" />
 
         <h1 className="font-script text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
           Наталья
