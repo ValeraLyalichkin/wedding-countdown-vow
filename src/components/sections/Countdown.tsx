@@ -39,7 +39,7 @@ export function Countdown() {
             </div>
           ))}
         </div>
-        <p className="mt-12 font-display font-light text-3xl md:text-4xl text-wine">
+        <p className="mt-12 font-french text-3xl md:text-4xl text-wine">
           С любовью, Валера и Наташа
         </p>
       </Reveal>
