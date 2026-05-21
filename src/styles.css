@@ -121,5 +121,5 @@
   pointer-events: none;
   animation: heart-rise linear forwards;
   z-index: 9999;
-  color: var(--wine);
+  color: #ff6fa3;
 }
