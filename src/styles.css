@@ -106,7 +106,12 @@
 }
 
 .font-script { font-family: var(--font-script); }
-.font-french { font-family: "Pinyon Script", "Marck Script", cursive; }
+@font-face {
+  font-family: "French Kiss KG";
+  src: url("/fonts/FrenchKissscript.ttf") format("truetype");
+  font-display: swap;
+}
+.font-french { font-family: "French Kiss KG", "Pinyon Script", cursive; }
 .font-display { font-family: var(--font-display); }
 .font-serif { font-family: var(--font-serif); }
 .font-num { font-family: var(--font-num); font-feature-settings: "lnum"; }
