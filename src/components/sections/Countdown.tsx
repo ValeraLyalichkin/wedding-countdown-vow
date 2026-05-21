@@ -26,7 +26,7 @@ export function Countdown() {
     <section className="relative overflow-hidden bg-cream py-20 px-4">
       <SketchCorners opacity={0.75} />
       <Reveal className="relative z-10 max-w-3xl mx-auto text-center">
-        <p className="font-display font-light text-5xl md:text-6xl text-wine">До встречи через...</p>
+        <p className="font-french text-5xl md:text-6xl text-wine">До встречи через...</p>
         <div className="mt-10 grid grid-cols-4 gap-3 md:gap-6">
           {items.map(([label, val]) => (
             <div key={label} className="bg-forest text-cream rounded-2xl p-4 md:p-6 shadow-lg">
