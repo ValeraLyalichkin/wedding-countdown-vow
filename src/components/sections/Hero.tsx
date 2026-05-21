@@ -6,12 +6,9 @@ function Divider({ className = "" }: { className?: string }) {
       fill="currentColor"
       aria-hidden="true"
     >
-      <line x1="18" y1="10" x2="190" y2="10" stroke="currentColor" strokeWidth="1.2" />
-      <line x1="210" y1="10" x2="382" y2="10" stroke="currentColor" strokeWidth="1.2" />
+      <line x1="6" y1="10" x2="394" y2="10" stroke="currentColor" strokeWidth="1.2" />
       <polygon points="6,10 14,5 22,10 14,15" />
       <polygon points="378,10 386,5 394,10 386,15" />
-      <circle cx="200" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="1.2" />
-      <circle cx="200" cy="10" r="1.8" />
     </svg>
   );
 }
