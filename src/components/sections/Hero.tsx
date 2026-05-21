@@ -6,12 +6,9 @@ function Divider({ className = "" }: { className?: string }) {
       fill="currentColor"
       aria-hidden="true"
     >
-      <line x1="18" y1="10" x2="190" y2="10" stroke="currentColor" strokeWidth="1.2" />
-      <line x1="210" y1="10" x2="382" y2="10" stroke="currentColor" strokeWidth="1.2" />
+      <line x1="6" y1="10" x2="394" y2="10" stroke="currentColor" strokeWidth="1.2" />
       <polygon points="6,10 14,5 22,10 14,15" />
       <polygon points="378,10 386,5 394,10 386,15" />
-      <circle cx="200" cy="10" r="5" fill="none" stroke="currentColor" strokeWidth="1.2" />
-      <circle cx="200" cy="10" r="1.8" />
     </svg>
   );
 }
@@ -25,13 +22,13 @@ export function Hero() {
           на свадьбу
         </p>
         <Divider className="w-80 sm:w-96 h-auto mt-20 sm:mt-24 mb-6" />
-        <h1 className="font-display font-light text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
+        <h1 className="font-french text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
           Наталья
         </h1>
-        <p className="font-display font-light text-5xl sm:text-6xl md:text-7xl leading-[1.1] my-1">
+        <p className="font-french text-5xl sm:text-6xl md:text-7xl leading-[1.1] my-1">
           и
         </p>
-        <h1 className="font-display font-light text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
+        <h1 className="font-french text-6xl sm:text-7xl md:text-8xl leading-[0.9]">
           Валерий
         </h1>
         <Divider className="w-80 sm:w-96 h-auto mt-6 mb-20 sm:mb-24" />
