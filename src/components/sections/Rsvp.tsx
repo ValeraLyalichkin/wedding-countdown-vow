@@ -53,7 +53,7 @@ export function Rsvp() {
       });
     } catch {/* ignore */}
 
-    setTimeout(() => navigate({ to: "/thanks" }), 1400);
+    setTimeout(() => navigate({ to: "/thanks" }), 600);
   };
 
   return (
