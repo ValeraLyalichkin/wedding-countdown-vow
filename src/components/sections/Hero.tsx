@@ -32,7 +32,7 @@ export function Hero() {
           Валерий
         </h1>
         <Divider className="w-80 sm:w-96 h-auto mt-6 mb-20 sm:mb-24" />
-        <p className="font-serif text-lg sm:text-xl md:text-2xl tracking-[0.2em]">15.08.26</p>
+        <p className="font-num text-lg sm:text-xl md:text-2xl">15.08.26</p>
         <p className="mt-4 text-3xl" aria-hidden="true">♥</p>
       </div>
     </section>
